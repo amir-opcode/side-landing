@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { BsDiscord } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -91,14 +92,18 @@ export default function Footer() {
   return (
     <footer>
       <div className="flex flex-col gap-16 bg-primary-main px-6 py-20 lg:gap-8 lg:px-16 lg:py-24">
-        <div className="flex max-w-screen-2xl w-full mx-auto flex-col items-center rounded-2xl bg-transparent lg:gap-8 lg:bg-shade-950 lg:py-10">
+        <div className="mx-auto flex w-full max-w-screen-2xl flex-col items-center rounded-2xl bg-transparent lg:gap-8 lg:bg-shade-950 lg:py-10">
           <h6 className="hidden text-2xl font-bold uppercase text-white-main lg:block">
             join the community
           </h6>
           <div className="flex w-full flex-wrap items-center justify-center gap-6 lg:gap-10">
-            <a
-              href="#"
-              className="flex h-[70px] w-[70px] max-w-[204px] items-center justify-center rounded-lg bg-blue-main/20 p-5 text-white-main lg:h-[82px] lg:w-full lg:gap-4 lg:px-8 lg:py-6"
+            <motion.a
+              href="https://x.com/sidexyz"
+              className="flex h-[70px] w-[70px] max-w-[214px] items-center justify-center rounded-lg bg-blue-main/20 p-5 text-white-main duration-300 hover:bg-red-main hover:shadow-2xl hover:shadow-white-main/40 lg:h-[82px] lg:w-full lg:gap-4 lg:px-8 lg:py-6"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <span className="hidden flex-col text-white-main lg:flex">
                 <span className="text-sm font-light leading-none">
@@ -108,10 +113,14 @@ export default function Footer() {
                 <b className="text-xl font-bold">Twitter</b>
               </span>
               <FaXTwitter size="34" />
-            </a>
-            <a
-              href="#"
-              className="flex h-[70px] w-[70px] max-w-[204px] items-center justify-center rounded-lg bg-blue-main/20 p-5 text-white-main lg:h-[82px] lg:w-full lg:gap-4 lg:px-8 lg:py-6"
+            </motion.a>
+            <motion.a
+              href="https://www.bonzai.pro/side"
+              className="flex h-[70px] w-[70px] max-w-[214px] items-center justify-center rounded-lg bg-blue-main/20 p-5 text-white-main duration-300 hover:bg-red-main hover:shadow-2xl hover:shadow-white-main/40 lg:h-[82px] lg:w-full lg:gap-4 lg:px-8 lg:py-6"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <span className="hidden flex-col text-white-main lg:flex">
                 <span className="text-sm font-light leading-none">
@@ -120,10 +129,14 @@ export default function Footer() {
                 <b className="text-xl font-bold">Bonzai</b>
               </span>
               <Bonzai />
-            </a>
-            <a
-              href="#"
-              className="flex h-[70px] w-[70px] max-w-[204px] items-center justify-center rounded-lg bg-blue-main/20 p-5 text-white-main lg:h-[82px] lg:w-full lg:gap-4 lg:px-8 lg:py-6"
+            </motion.a>
+            <motion.a
+              href="https://discord.com/invite/tU267yZHEa"
+              className="flex h-[70px] w-[70px] max-w-[214px] items-center justify-center rounded-lg bg-blue-main/20 p-5 text-white-main duration-300 hover:bg-red-main hover:shadow-2xl hover:shadow-white-main/40 lg:h-[82px] lg:w-full lg:gap-4 lg:px-8 lg:py-6"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <span className="hidden flex-col text-white-main lg:flex">
                 <span className="text-sm font-light leading-none">
@@ -132,10 +145,14 @@ export default function Footer() {
                 <b className="text-xl font-bold">Discord</b>
               </span>
               <BsDiscord size="33" />
-            </a>
-            <a
-              href="#"
-              className="flex h-[70px] w-[70px] max-w-[204px] items-center justify-center rounded-lg bg-blue-main/20 p-5 text-white-main lg:h-[82px] lg:w-full lg:gap-4 lg:px-8 lg:py-6"
+            </motion.a>
+            <motion.a
+              href="https://t.me/sidexyz"
+              className="flex h-[70px] w-[70px] max-w-[214px] items-center justify-center rounded-lg bg-blue-main/20 p-5 text-white-main duration-300 hover:bg-red-main hover:shadow-2xl hover:shadow-white-main/40 lg:h-[82px] lg:w-full lg:gap-4 lg:px-8 lg:py-6"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <span className="hidden flex-col text-white-main lg:flex">
                 <span className="text-sm font-light leading-none">
@@ -144,10 +161,10 @@ export default function Footer() {
                 <b className="text-xl font-bold">Telegram</b>
               </span>
               <FaTelegramPlane size="33" />
-            </a>
+            </motion.a>
           </div>
         </div>
-        <div className="flex flex-row max-w-screen-2xl w-full mx-auto justify-between lg:flex-row-reverse lg:gap-8">
+        <div className="mx-auto flex w-full max-w-screen-2xl flex-row justify-between lg:flex-row-reverse lg:gap-8">
           <div className="flex flex-1 flex-col gap-9 rounded-2xl bg-transparent lg:flex-row lg:justify-between lg:bg-shade-950 lg:px-24 lg:py-14">
             {links.map((link) => (
               <div key={link.title} className="flex flex-col gap-2 lg:gap-4">
@@ -171,51 +188,59 @@ export default function Footer() {
               </div>
             ))}
           </div>
-          <div className="flex flex-1 lg:flex-[0.48] flex-col gap-8 rounded-2xl bg-transparent  lg:bg-shade-950 lg:px-10 lg:py-14">
+          <div className="flex flex-1 flex-col gap-8 rounded-2xl bg-transparent lg:flex-[0.48] lg:bg-shade-950 lg:px-10 lg:py-14">
             <span className="hidden text-xl font-bold text-white-main lg:block">
               Check Also
             </span>
-            <div className="flex w-full flex-col lg:flex-row lg:flex-wrap items-end gap-4">
-              <a
+            <div className="flex w-full flex-col items-end gap-4 lg:flex-row lg:flex-wrap">
+              <motion.a
                 href="https://coinmarketcap.com/fr/currencies/side-xyz/"
                 rel="noopener"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="flex items-center justify-center gap-2 rounded-full bg-blue-main/20 px-5 py-2 text-white-main"
+                className="flex items-center justify-center gap-2 rounded-full bg-blue-main/20 px-5 py-2 text-white-main duration-300 hover:bg-red-main hover:shadow-2xl hover:shadow-white-main/40"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <SiCoinmarketcap size="20" />
                 <span>Coin Market Cap</span>
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="https://opensea.io/collection/side-cards"
                 rel="noopener"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="flex items-center justify-center gap-2 rounded-full bg-blue-main/20 px-5 py-2 text-white-main"
+                className="flex items-center justify-center gap-2 rounded-full bg-blue-main/20 px-5 py-2 text-white-main duration-300 hover:bg-red-main hover:shadow-2xl hover:shadow-white-main/40"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <OpenSea />
                 <span>Open Sea</span>
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="https://www.dextools.io/app/en/ether/pair-explorer/0x999321ecb9c9a95f21aa47ae3139c7c40ace3be9?t=1716657011455"
                 target="_blank"
                 rel="noopener"
                 referrerPolicy="no-referrer"
-                className="flex items-center justify-center gap-2 rounded-full bg-blue-main/20 px-5 py-2 text-white-main"
+                className="flex items-center justify-center gap-2 rounded-full bg-blue-main/20 px-5 py-2 text-white-main duration-300 hover:bg-red-main hover:shadow-2xl hover:shadow-white-main/40"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <Dextools />
                 <span>Dextools</span>
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="https://etherscan.io/token/0x5a3153ae94e9fe2ecfdbd7ba7284c51560cb7aee"
                 target="_blank"
                 rel="noopener"
                 referrerPolicy="no-referrer"
-                className="flex items-center justify-center gap-2 rounded-full bg-blue-main/20 px-5 py-2 text-white-main"
+                className="flex items-center justify-center gap-2 rounded-full bg-blue-main/20 px-5 py-2 text-white-main duration-300 hover:bg-red-main hover:shadow-2xl hover:shadow-white-main/40"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <EtherScan />
                 <span>EtherScan</span>
-              </a>
+              </motion.a>
             </div>
           </div>
         </div>

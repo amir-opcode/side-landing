@@ -44,23 +44,27 @@ export default function StuffCard({ item }: IProps) {
           referrerPolicy="no-referrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="font-inter rounded-lg bg-red-main px-6 py-2 font-bold text-white-main lg:px-8 lg:py-5"
+          className="rounded-lg bg-red-main px-6 py-2 font-inter font-bold text-white-main lg:px-8 lg:py-5"
         >
           {item.button.title}
         </motion.a>
       ) : (
         <button
           type="button"
-          className="font-inter cursor-not-allowed rounded-lg bg-red-main px-6 py-2 font-bold text-white-main opacity-20 lg:px-8 lg:py-5"
+          className="cursor-not-allowed rounded-lg bg-red-main px-6 py-2 font-inter font-bold text-white-main opacity-20 lg:px-8 lg:py-5"
         >
           {item.button.title}
         </button>
       )}
-      <div
-        className={`absolute -bottom-10 -right-8 h-36 w-36 lg:bottom-20 lg:h-[250px] lg:w-[250px] ${result == "Odd" ? "lg:-right-80" : "lg:-left-80 lg:right-0"}`}
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        initial={{ opacity: 0, translateY: "-100vh" }}
+        animate={{ opacity: 1, translateY: 0 }}
+        className={`absolute -bottom-10 -right-8 h-36 w-36 animate-ping lg:bottom-20 lg:h-[250px] lg:w-[250px] ${result == "Odd" ? "lg:-right-80" : "lg:-left-80 lg:right-0"}`}
       >
         {item.svg}
-      </div>
+      </motion.div>
     </div>
   );
 }
