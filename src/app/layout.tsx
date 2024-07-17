@@ -1,5 +1,5 @@
 import "~/styles/globals.css";
-
+import localFont from "next/font/local";
 import { type Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -7,6 +7,12 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
+});
+
+const regarn = localFont({
+  src: "../../public/assets/font/Regarn-Bold.ttf",
+  display: "swap",
+  variable: "--font-regarn",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +25,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
+    <html lang="en" className={`${regarn.variable} ${inter.variable} `}>
       <body>{children}</body>
     </html>
   );
