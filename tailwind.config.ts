@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: [ "var(--font-regarn)", ...fontFamily.serif],
+        inter: ["var(--font-regarn)", ...fontFamily.serif],
         sans: ["var(--font-inter)", ...fontFamily.sans],
       },
       colors: {

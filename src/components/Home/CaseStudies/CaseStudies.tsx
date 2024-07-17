@@ -70,7 +70,7 @@ export default function CaseStudies() {
           active and engaged members.
         </p>
       </div>
-      <div className="mx-auto max-w-screen-2xl mb-14">
+      <div className="mx-auto mb-14 max-w-screen-2xl">
         <AliceCarousel
           mouseTracking
           infinite
@@ -79,10 +79,10 @@ export default function CaseStudies() {
           disableDotsControls
           items={items.map((item) => (
             <div
-              className="flex items-center w-full justify-center gap-3 lg:gap-5"
+              className="flex w-full items-center justify-center gap-3 lg:gap-5"
               key={item.name}
             >
-              <div className="flex !min-w-fit w-fit max-w-[302px] items-center justify-between gap-2 rounded-full bg-blue-main/20 px-5 py-3 lg:gap-4 lg:px-7 lg:py-6">
+              <div className="flex w-fit !min-w-fit max-w-[302px] items-center justify-between gap-2 rounded-full bg-blue-main/20 px-5 py-3 lg:gap-4 lg:px-7 lg:py-6">
                 <Image
                   alt={item.title}
                   src={item.innerImageSrc}
@@ -90,7 +90,7 @@ export default function CaseStudies() {
                   height={40}
                   className="h-7 w-7 rounded-full lg:h-10 lg:w-10"
                 />
-                <span className="font-light text-nowrap text-primary-main lg:text-xl">
+                <span className="text-nowrap font-light text-primary-main lg:text-xl">
                   {item.title}
                 </span>
                 <span className="rounded-[10px] bg-blue-main px-3 py-2 text-sm font-bold text-white-main lg:px-4 lg:text-base">
@@ -120,10 +120,9 @@ export default function CaseStudies() {
           //   1020:{
           //     items:4
           //   },
-            
+
           // }}
           autoWidth
-          
         />
       </div>
       <div className="mx-auto max-w-screen-2xl">
@@ -135,10 +134,10 @@ export default function CaseStudies() {
           disableDotsControls
           items={items.reverse().map((item) => (
             <div
-              className="flex items-center w-full justify-center gap-3 lg:gap-5"
+              className="flex w-full items-center justify-center gap-3 lg:gap-5"
               key={item.name}
             >
-              <div className="flex !min-w-fit w-fit max-w-[302px] items-center justify-between gap-2 rounded-full bg-blue-main/20 px-5 py-3 lg:gap-4 lg:px-7 lg:py-6">
+              <div className="flex w-fit !min-w-fit max-w-[302px] items-center justify-between gap-2 rounded-full bg-blue-main/20 px-5 py-3 lg:gap-4 lg:px-7 lg:py-6">
                 <Image
                   alt={item.title}
                   src={item.innerImageSrc}
@@ -146,7 +145,7 @@ export default function CaseStudies() {
                   height={40}
                   className="h-7 w-7 rounded-full lg:h-10 lg:w-10"
                 />
-                <span className="font-light text-nowrap text-primary-main lg:text-xl">
+                <span className="text-nowrap font-light text-primary-main lg:text-xl">
                   {item.title}
                 </span>
                 <span className="rounded-[10px] bg-blue-main px-3 py-2 text-sm font-bold text-white-main lg:px-4 lg:text-base">
@@ -176,10 +175,9 @@ export default function CaseStudies() {
           //   1020:{
           //     items:4
           //   },
-            
+
           // }}
           autoWidth
-          
         />
       </div>
     </div>
