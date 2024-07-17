@@ -11,3 +11,13 @@
   gap: 20px;
   display: flex;
 }
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-rotate {
+  animation: spin 5s linear infinite;
+}
