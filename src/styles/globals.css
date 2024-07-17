@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.alice-carousel__stage-item {
+  width: fit-content;
+  max-width: fit-content;
+  min-width: fit-content;
+}
+.alice-carousel__stage {
+  gap: 20px;
+  display: flex;
+}
