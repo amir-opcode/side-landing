@@ -46,15 +46,15 @@ export default function SideToken() {
   return (
     <div className="relative bg-secondary-main pt-24 lg:pt-36">
       <div className="flex flex-col gap-4 px-6 lg:gap-6 lg:px-24">
-        <h3 className="font-inter mx-auto w-fit border-b text-center text-[40px] font-bold leading-none text-white-main lg:text-[80px]">
+        <h3 className="mx-auto w-fit border-b text-center font-inter text-[40px] font-bold leading-none text-white-main lg:text-[80px]">
           $SIDE TOKEN & UTILITIES
         </h3>
         <p className="mx-auto max-w-[700px] text-center text-sm font-light text-white-main lg:text-xl">
           The $Side token serves as both the utility and governance token for
           our MarketingFi platform. By using our solution, founders and
-          community members (aka "degens") can earn $Side tokens as a reward.
-          Additionally, our $Side token staking solution enables holders to
-          access exclusive benefits within our apps. Stake your $Side tokens
+          community members (aka &quot;degens&quot;) can earn $Side tokens as a
+          reward. Additionally, our $Side token staking solution enables holders
+          to access exclusive benefits within our apps. Stake your $Side tokens
           today and start enjoying the perks of being a part of our platform.
         </p>
         <div className="mt-11 flex items-center justify-center gap-5 lg:mt-3 lg:gap-8">
@@ -94,7 +94,7 @@ export default function SideToken() {
               href={item.link.href}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`font-inter rounded-lg bg-red-main px-6 py-2 font-bold text-white-main lg:px-8 lg:py-5 ${
+              className={`rounded-lg bg-red-main px-6 py-2 font-inter font-bold text-white-main lg:px-8 lg:py-5 ${
                 item.link.mode === "disabled" && "cursor-not-allowed opacity-20"
               }`}
             >

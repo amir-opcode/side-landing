@@ -100,12 +100,12 @@ export default function Stuff() {
   return (
     <div className="overflow-hidden bg-primary-main py-24 lg:py-48">
       <div className="relative mx-auto mb-20 flex w-fit flex-col gap-4 px-6 lg:mb-36 lg:gap-6 lg:px-24">
-        <h3 className="font-inter mx-auto w-fit border-b text-center text-[40px] font-bold uppercase leading-none text-white-main lg:text-[80px]">
+        <h3 className="mx-auto w-fit border-b text-center font-inter text-[40px] font-bold uppercase leading-none text-white-main lg:text-[80px]">
           our web 3 stuff
         </h3>
         <p className="mx-auto max-w-[700px] text-center text-sm font-light text-white-main lg:text-xl">
           We Build Stuff to Help Projects Grow Like Crazy and Enable Communities
-          ( aka 'Degens') to Receive Daily Points and Airdrops.
+          ( aka &apos;Degens&apos;) to Receive Daily Points and Airdrops.
         </p>
         <div className="absolute -bottom-24 -left-28 hidden min-[1100px]:block">
           <div className="relative">
@@ -120,7 +120,7 @@ export default function Stuff() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className={`font-inter rounded-lg px-6 py-4 font-bold leading-none text-white-main ${activeView === "FOUNDERS" ? "bg-red-main" : "bg-shade-800"}`}
+          className={`rounded-lg px-6 py-4 font-inter font-bold leading-none text-white-main ${activeView === "FOUNDERS" ? "bg-red-main" : "bg-shade-800"}`}
         >
           FOUNDERS
         </motion.button>
@@ -133,15 +133,15 @@ export default function Stuff() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className={`font-inter rounded-lg px-6 py-4 font-bold leading-none text-white-main ${activeView === "DEGENS" ? "bg-red-main" : "bg-shade-800"}`}
+          className={`rounded-lg px-6 py-4 font-inter font-bold leading-none text-white-main ${activeView === "DEGENS" ? "bg-red-main" : "bg-shade-800"}`}
         >
           DENGENS
         </motion.button>
       </div>
       <div className="mx-auto my-12 mb-20 flex w-full max-w-[1100px] flex-col gap-[88px] px-6 lg:my-[120px] lg:gap-[200px] lg:px-24">
         {activeView === "FOUNDERS"
-          ? founderItems.map((item) => <StuffCard item={item} />)
-          : degenItems.map((item) => <StuffCard item={item} />)}
+          ? founderItems.map((item) => <StuffCard key={item.id} item={item} />)
+          : degenItems.map((item) => <StuffCard key={item.id} item={item} />)}
       </div>
     </div>
   );
