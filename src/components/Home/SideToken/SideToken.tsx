@@ -12,7 +12,7 @@ const list = [
       "Click the button below to buy $Side (ERC-20 token) directly on Uniswap.",
     link: {
       href: "https://app.uniswap.org/explore/tokens/ethereum/0x5a3153ae94e9fe2ecfdbd7ba7284c51560cb7aee",
-      title: "BUY $SIDE",
+      title: "SEE Campaign",
       mode: "active",
     },
   },
@@ -49,7 +49,7 @@ export default function SideToken() {
         <h3 className="font-inter mx-auto w-fit border-b text-center text-[40px] font-bold leading-none text-white-main lg:text-[80px]">
           $SIDE TOKEN & UTILITIES
         </h3>
-        <p className="mx-auto max-w-lg text-center text-sm font-light text-white-main lg:text-xl">
+        <p className="mx-auto max-w-[700px] text-center text-sm font-light text-white-main lg:text-xl">
           The $Side token serves as both the utility and governance token for
           our MarketingFi platform. By using our solution, founders and
           community members (aka "degens") can earn $Side tokens as a reward.
@@ -94,7 +94,7 @@ export default function SideToken() {
               href={item.link.href}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`font-inter rounded-lg bg-red-main px-8 py-5 font-bold text-white-main ${
+              className={`font-inter rounded-lg bg-red-main px-6 py-2 font-bold text-white-main lg:px-8 lg:py-5 ${
                 item.link.mode === "disabled" && "cursor-not-allowed opacity-20"
               }`}
             >
@@ -104,7 +104,7 @@ export default function SideToken() {
         ))}
       </div>
       <Image
-        className="object-cover"
+        className="mx-auto object-contain"
         width={2566}
         height={565}
         alt="Side Token"
